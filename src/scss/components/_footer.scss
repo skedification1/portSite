@@ -1,0 +1,42 @@
+.footer {
+  .container {
+    height: 200px;
+    background-color: rgb(81, 177, 221);
+    // display: flex;
+    align-items: center;
+    width: 100%;
+
+    a {
+      // margin-left: 100px;
+      justify-content: space-between;
+      font-size: 18px;
+      text-decoration: none;
+      color: #818597;
+      font-weight: 500;
+      margin-right: 40px;
+    }
+  }
+  &_hrefs {
+    display: flex;
+    padding-top: 80px;
+    align-items: center;
+    justify-content: center;
+    .mail_tel {
+      display: flex;
+      padding-left: 100px;
+      .mail {
+        padding-right: 10px;
+      }
+      .tel {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &_title {
+    font-size: 22px;
+    p {
+      color: rgb(103, 45, 158);
+    }
+  }
+}

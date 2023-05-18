@@ -1,0 +1,123 @@
+@import './variables';
+@import './libs/normalize';
+@import './components/all';
+
+.wrapper {
+  margin: 30px auto;
+  font-size: 20px;
+  color: $black;
+  text-align: center;
+  background-color: bisque;
+  max-width: 1800px;
+}
+
+.section {
+  // margin-top: 30px;
+  padding-top: 30px;
+  height: 100%;
+  background-color: rgb(172, 172, 172);
+
+  &__one {
+    height: 500px;
+    background-color: rgb(207, 207, 173);
+    min-height: 100vh;
+    background: url('../img/jap4.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &_profile {
+      display: flex;
+      height: 800px;
+
+      padding: 10px 60px 10px 200px;
+      .profile_block {
+        .photoProfile {
+          width: 290px;
+          height: 400px;
+        }
+        .more {
+          position: relative;
+          max-width: 300px;
+          height: 50px;
+          text-align: center;
+          font-weight: 300;
+          background-color: rgb(46, 24, 128);
+          &_btn {
+            position: absolute;
+            bottom: 0;
+            transform: translateX(-50%);
+            margin-bottom: -24px;
+            width: 200px;
+            height: 40px;
+            border-radius: 30px;
+            overflow: hidden;
+            outline: none;
+            border: 0;
+            font-weight: 500;
+            background-color: #ffbe44;
+            cursor: pointer;
+            text-transform: uppercase;
+            z-index: 10;
+          }
+        }
+      }
+
+      background-color: rgb(102, 180, 154, 0.9);
+
+      .descr {
+        padding-left: 60px;
+        background-color: rgb(247, 227, 200, 0.6);
+        &_text {
+          padding-top: 20px;
+          background-color: #887655;
+          span {
+            display: block;
+            text-align: left;
+          }
+        }
+
+        .bio {
+          background-color: #ffbe44;
+          &_item {
+            align-items: center;
+            span {
+              padding-left: 10px;
+            }
+
+            display: flex;
+            &_study {
+              .inf {
+                align-items: center;
+                display: flex;
+              }
+              span {
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  ////////////////////////////////////////////////
+  &__two {
+    margin-top: 30px;
+    height: 600px;
+    background-color: rgb(134, 106, 117);
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 15px; /* Ширина всего элемента навигации */
+}
+
+body::-webkit-scrollbar-track {
+  background: none; /* Цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #eecfba, #c5dde8);
+  // background-color: #af64af; /* Цвет бегунка */
+  border-radius: 10px; /* Округление бегунка */
+  border: 1px solid #050c26; /* Оформление границ бегунка */
+}
